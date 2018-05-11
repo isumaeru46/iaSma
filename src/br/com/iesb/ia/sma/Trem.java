@@ -7,7 +7,7 @@ import jade.core.Agent;
 public class Trem extends Agent {
 	
 	private static final long serialVersionUID = -2138810881983489400L;
-	private Long Identificador;
+	private Long identificador;
 	private String classe; //passageiro ou cargueiro
 	private List<LinhaTerrea> rotas;
 	private int prioridade; //1- passageiro 2- cargueiro
@@ -28,11 +28,11 @@ public class Trem extends Agent {
 	
 	
 	public Long getIdentificador() {
-		return Identificador;
+		return identificador;
 	}
 	
 	public void setIdentificador(Long identificador) {
-		Identificador = identificador;
+		this.identificador = identificador;
 	}
 
 	public String getClasse() {

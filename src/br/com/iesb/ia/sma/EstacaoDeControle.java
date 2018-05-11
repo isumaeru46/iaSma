@@ -7,11 +7,20 @@ import jade.core.Agent;
 public class EstacaoDeControle extends Agent {
 	
 	private static final long serialVersionUID = 7503458692702240903L;
-	private Long Identificador;
+	private Long identificador;
 	private int prioridade;
 	private List<EstacaoDeControle> estacoesVizinhas;
+	private List<LinhaTerrea> linhasVizinhas;
 	
 	
+	public EstacaoDeControle(Long id) {
+		setIdentificador(id);
+	}
+
+
+
+
+
 	protected void setup(){
 		
 	}
@@ -21,11 +30,11 @@ public class EstacaoDeControle extends Agent {
 	
 	
 	public Long getIdentificador() {
-		return Identificador;
+		return identificador;
 	}
 	
 	public void setIdentificador(Long identificador) {
-		Identificador = identificador;
+		this.identificador = identificador;
 	}
 
 	public int getPrioridade() {
@@ -42,6 +51,22 @@ public class EstacaoDeControle extends Agent {
 
 	public void setEstacoesVizinhas(List<EstacaoDeControle> estacoesVizinhas) {
 		this.estacoesVizinhas = estacoesVizinhas;
+	}
+
+
+
+
+
+	public List<LinhaTerrea> getLinhasVizinhas() {
+		return linhasVizinhas;
+	}
+
+
+
+
+
+	public void setLinhasVizinhas(List<LinhaTerrea> linhasVizinhas) {
+		this.linhasVizinhas = linhasVizinhas;
 	}
 
 }

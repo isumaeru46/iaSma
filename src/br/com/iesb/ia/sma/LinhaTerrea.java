@@ -5,7 +5,7 @@ import jade.core.Agent;
 public class LinhaTerrea extends Agent {
 	
 	private static final long serialVersionUID = 833840896889673362L;
-	private Long Identificador;
+	private Long identificador;
 	private String classe; //simples ou desvio
 	private int prioridade; // Depende da execucao
 	private String estado; //ocupada ou livre
@@ -21,11 +21,11 @@ public class LinhaTerrea extends Agent {
 	
 	
 	public Long getIdentificador() {
-		return Identificador;
+		return identificador;
 	}
 	
 	public void setIdentificador(Long identificador) {
-		Identificador = identificador;
+		this.identificador = identificador;
 	}
 
 	public String getClasse() {
